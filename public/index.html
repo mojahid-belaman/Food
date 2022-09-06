@@ -9,9 +9,9 @@
 </head>
 <body class="text-gray-500 font-nunito">
     <!-- //NOTE - Content Wrapper -->
-    <div>
+    <div class="grid md:grid-cols-3">
         <!-- //NOTE - Start Nav -->
-        <div>
+        <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100"><a href="/">Food</a></h1>
@@ -25,10 +25,10 @@
         </div>
         <!-- //NOTE - End Nav -->
         <!-- //NOTE - Start Main -->
-        <main class="px-16 py-6 bg-gray-100">
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="text-primary">Log In</a>
-                <a href="#" class="text-primary ml-4">Log Out</a>
+                <a href="#" class="btn md:border-primary md:border-2 text-primary">Log In</a>
+                <a href="#" class="btn md:border-primary md:border-2 text-primary ml-4">Log Out</a>
             </div>
             <header>
                 <h2 class="text-gray-700">Recipes</h2>
@@ -36,10 +36,30 @@
             </header>
             <div>
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-100">Latest Recipes</h4>
-                <div class="mt-8">
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!-- //NOTE - Card Go Here -->
                     <div class="card">
                         <img src="img/anna-pelzer.jpg" alt="anna-pelzer" class="w-full h-32 sm:h-48 object-cover" />
+                        <div class="mt-4 pl-2 pb-2">
+                            <span class="font-bold block">5 Nean Chilli Stew</span>
+                            <span class="text-gray-400 text-sm">Recipe By Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span class="">25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/brooke-lark-unsplash.jpg" alt="anna-pelzer" class="w-full h-32 sm:h-48 object-cover" />
+                        <div class="mt-4 pl-2 pb-2">
+                            <span class="font-bold block">5 Nean Chilli Stew</span>
+                            <span class="text-gray-400 text-sm">Recipe By Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span class="">25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/brooke-lark.jpg" alt="anna-pelzer" class="w-full h-32 sm:h-48 object-cover" />
                         <div class="mt-4 pl-2 pb-2">
                             <span class="font-bold block">5 Nean Chilli Stew</span>
                             <span class="text-gray-400 text-sm">Recipe By Mario</span>
@@ -55,7 +75,7 @@
                     <!-- //NOTE - Card Go Here -->
                 </div>
                 <div class="flex justify-center">
-                    <div class="bg-secondary-100 text-secondary-200">Load more</div>
+                    <div class="btn bg-secondary-100 text-secondary-200">Load more</div>
                 </div>
             </div>
         </main>
